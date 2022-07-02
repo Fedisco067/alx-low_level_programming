@@ -3,22 +3,25 @@
 #include <stido.h>
 
 /**
- * main - prints the last digit of the random
- * number number stored in the variable n
+ * main - Prints the last digit of a randomly generated number
+ * and whether it is greater than 5, less than 6, or 0.
+ *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 int n;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-printf("Last digit of %d is %d", n, n % 10);
-if (n % 10 > 5)
-printf("and is greater than 5n");
-else if (n % 10 == 0)
-printf("and is 0\n");
-else if (n % 10 < 6 && n % 10 ! = 0)
-printf("and is less than 6 and not 0n");
+printf("Last digit of %d is %d", n, n % n);
+if (n > 0)
+printf("%d is positive\n", n);
+else if (n < 0)
+printf("%d is negative\n", n);
+else (n == 0)
+printf("%d is zero\n", n);
+
 return (0);
 }
