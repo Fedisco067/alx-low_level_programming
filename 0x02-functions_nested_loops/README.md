@@ -1,1 +1,2 @@
-0x02. C - Functions, nested loops
+#!/bin/bash
+This is 0x02. C - Functions, nested loops
